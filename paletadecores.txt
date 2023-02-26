@@ -1,0 +1,5 @@
+#383E42 cinza
+#0B5A93 azul
+#0E1708 verde escuro
+#D9886A salmão
+#8CCFAE verde claro
