@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'pixeled';
+    src: url(pixeled.ttf);
+}
+
+:root {
+    --cor01: #383E42;
+    --cor02: #0B5A93;
+    --cor03: #0E1708;
+    --cor04: #D9886A;
+    --cor05: #8CCFAE;
+}
+
+* {
+    margin: 0px;
+    padding-inline-start: 0px;
+}
+
+body {
+    font-family: 'pixeled', Arial, Helvetica, sans-serif;
+    background-color: var(--cor01);
+    margin: auto;
+}
+
+main {
+    border: solid 3px black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+div {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: solid 3px black;
+    width: 200px;
+    border-radius: 50px;
+}
