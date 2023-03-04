@@ -1,0 +1,5 @@
+const menu = document.getElementById('menu')
+const rules = document.getElementById('rules')
+const winner = document.getElementById('winner')
+const loser = document.getElementById9('loser')
+const game = document.getElementById('gameplay')

@@ -9,22 +9,65 @@
 </head>
 <body>
     <!--MENU-->
-    <div id="menu" class="">
+    <div id="menu" class="none">
         <div id="logo">
             <p>JOKENPO</p>
-            <img src="imagens/logojoken.png" alt="Gamer logo">
+            <img src="imagens/logojoken.png" alt="Game logo">
         </div>
         <input type="button" value="PLAY" class="button">
         <input type="button" value="RULES" class="button">
     </div>
     <!--RULES-->
-    <div id="rules" class="">
+    <div id="rules" class="none">
         <img src="imagens/rules.png" alt="Image that explains the rules of the game">
         <input type="button" value="BACK" class="button">
     </div>
     <!--GAMEPLAY-->
-    <div id="gameplay" class="container center">
-
+    <div id="gameplay" class="">
+        <div id="score">
+            <div>YOU</div>
+            <div id="player-score">0</div>
+            <div id="cpu-score">0</div>
+            <div>CPU</div>
+        </div>
+            <div id="match">
+                <div id="move1">
+                    
+                </div>
+                <div id="move2">
+                    
+                </div>
+            </div>
+            <p>CHOOSE YOUR MOVE</p>
+            <div id="movement">
+                <input type="radio" name="txt" id="rock">
+                <label for="rock"><img src="imagens/rock.png" alt="rock"></label>
+                <input type="radio" name="txt" id="paper">
+                <label for="paper"><img src="imagens/paper.png" alt="paper"></label>
+                <input type="radio" name="txt" id="scissors">
+                <label for="scissors"><img src="imagens/scissors.png" alt="scissors"></label>
+               
+                
+            </div>
+        
     </div>
+    <!--WINNER-->
+    <div id="winner" class="none">
+        <p>YOU WIN!</p>
+        <input type="button" value="PLAY AGAIN" class="button">
+        <input type="button" value="MAIN MENU" class="button">
+    </div>
+    <!--LOSER-->
+    <div id="loser" class="none" >
+        <p>YOU LOSE...</p>
+        <input type="button" value="PLAY AGAIN" class="button">
+        <input type="button" value="MAIN MENU" class="button">
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

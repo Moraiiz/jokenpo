@@ -26,17 +26,20 @@ body {
     background-color: var(--gray);
     max-width: 400px;
 }
+body p {
+    font-size: 1em;
+}
 
 div#menu {
-    margin-top: 10%;
+    margin-top: 50%;
 }
 
 div#logo {
     margin: auto;
-    margin-top: 10%;
+    margin-top: 50%;
 }
 
-div#logo p {
+p {
     text-align: center;
     color: white;
     font-size: 2em;
@@ -68,7 +71,7 @@ input.button:hover {
 
 div#rules {
     margin: auto;
-    margin-top: 10%;
+    margin-top: 50%;
     background-color: white;
     width: 295px;
     height: 295px;
@@ -80,6 +83,66 @@ div#rules img {
     display: block;
     margin: auto;
 }
+
+#winner, #loser {
+    margin-top: 50%;
+}
+
+#gameplay {
+    background-color: black;
+    margin: auto;
+    margin-top: 50%;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.600);
+}
+
+#score {
+    display: flex; 
+    justify-content: center;
+}
+
+#score div{
+    padding: 0px 20px 0px 20px;
+}
+
+ #match {
+    display: flex;
+    background-color: white;
+    max-width: 400px;
+ }
+
+#move1 , #move2 {
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 200px;
+    height: 200px;
+}
+
+#movement {
+    display: flex;
+    height: 200px;
+}
+
+#movement input {
+    visibility: hidden;
+}
+
+label {
+    display: block;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.322) ;
+    width: 120px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
