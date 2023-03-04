@@ -4,11 +4,11 @@
 }
 
 :root {
-    --cor01: #383E42;
-    --cor02: #0B5A93;
-    --cor03: #0E1708;
-    --cor04: #D9886A;
-    --cor05: #8CCFAE;
+    --gray: #383E42;
+    --blue: #0B5A93;
+    --darkgreen: #0E1708;
+    --salmon: #D9886A;
+    --green: #8CCFAE;
 }
 
 * {
@@ -16,54 +16,75 @@
     padding: 0px;
 }
 
+.none {
+    display: none;
+}
+
 body {
     margin: auto;
     font-family: 'pixeled', Arial, Helvetica, sans-serif;
-    background-color: var(--cor01);
-    max-width: 600px;
-
+    background-color: var(--gray);
+    max-width: 400px;
 }
 
 div#menu {
-    margin-top: 50%;
+    margin-top: 10%;
 }
 
-body div#menu div {
-    background-color: white;
-    color: black;
-    text-align: center;
-    border: solid 3px black;
-    width: 200px;
-    border-radius: 50px;
+div#logo {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10%;
+}
+
+div#logo p {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.600);
+}
+
+div#logo img {
+    display: block;
+    margin: auto;
+}
+
+input.button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'pixeled', Arial, Helvetica, sans-serif ;
+    height: 50px;
+    width: 150px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.600);
+    border-radius: 25px;
+}
+
+input.button:hover {
+    background-color: black;
+    color: white;
+    border: solid 3px white;
 }
 
 div#rules {
     margin: auto;
+    margin-top: 10%;
     background-color: white;
-    border: solid 3px black;
-    border-radius: 25px;
-    width: 450px;
-    height: 400px;
+    width: 295px;
+    height: 295px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.600);
 }
 
 div#rules img {
     display: block;
     margin: auto;
-    margin-top: 25px;
-    width: 350px;
-    height: 350px;
 }
 
-div.back {
-    background-color: white;
-    border: solid 3px black;
-    border-radius: 50px;
-    margin: auto;
-    margin-top: 50px;
-    width: 100px;
-    text-align: center;
-    
-    
-}
+
+
+
+
+
+
+
