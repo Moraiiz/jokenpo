@@ -19,14 +19,15 @@ function play(){
     gameplay.classList.remove('none')
 }
 
-function movement() {
+function playermove() {
     let move1 = document.getElementById('rock')
     let move2 = document.getElementById('paper')
     let move3 = document.getElementById('scissors')
+    let choie = document.getElementById('move1')
     let choice = document.createAttribute('img')
 
     if (move1 == checked) {
-        choice.createAttribute()
+        img.setAtribute('src', 'imagens/rock.png')
     }
 
 }

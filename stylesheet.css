@@ -118,7 +118,7 @@ div#rules img {
     max-width: 400px;
  }
 
-#move1 , #move2 {
+#playermove , #cpumove {
     background-color: rgba(0, 0, 0, 0.322);
     width: 200px;
     height: 200px;
