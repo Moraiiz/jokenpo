@@ -9,21 +9,21 @@
 </head>
 <body>
     <!--MENU-->
-    <div id="menu" class="">
+    <div id="menu">
         <div id="logo">
             <p>JOKENPO</p>
             <img src="imagens/logojoken.png" alt="Game logo">
         </div>
-        <input type="button" value="PLAY" class="button">
-        <input type="button" value="RULES" class="button">
+        <input type="button" value="PLAY" class="button" onclick="play()">
+        <input type="button" value="RULES" class="button" onclick="rule()">
     </div>
     <!--RULES-->
-    <div id="rules" class="">
+    <div id="rules" class="none">
         <img src="imagens/rules.png" alt="Image that explains the rules of the game">
-        <input type="button" value="BACK" class="button">
+        <input type="button" value="BACK" class="button" onclick="back()">
     </div>
     <!--GAMEPLAY-->
-    <div id="gameplay" class="">
+    <div id="gameplay" class="none">
         <div id="score">
             <div>YOU</div>
             <div id="player-score">0</div>
@@ -53,13 +53,13 @@
         
     </div>
     <!--WINNER-->
-    <div id="winner" class="">
+    <div id="winner" class="none">
         <p>YOU WIN!</p>
         <input type="button" value="PLAY AGAIN" class="button">
         <input type="button" value="MAIN MENU" class="button">
     </div>
     <!--LOSER-->
-    <div id="loser" class="" >
+    <div id="loser" class="none" >
         <p>YOU LOSE...</p>
         <input type="button" value="PLAY AGAIN" class="button">
         <input type="button" value="MAIN MENU" class="button">
