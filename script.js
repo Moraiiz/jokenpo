@@ -23,11 +23,10 @@ function playermove() {
     let move1 = document.getElementById('rock')
     let move2 = document.getElementById('paper')
     let move3 = document.getElementById('scissors')
-    let choie = document.getElementById('move1')
-    let choice = document.createAttribute('img')
+    let choice = document.createAttribute('playermove')
 
-    if (move1 == checked) {
-        img.setAtribute('src', 'imagens/rock.png')
+    if (move1 .checked) {
+        playermove.setAtribute('src', 'imagens/rock.png')
     }
 
 }
