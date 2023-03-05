@@ -23,10 +23,10 @@ function movement() {
     let move1 = document.getElementById('rock')
     let move2 = document.getElementById('paper')
     let move3 = document.getElementById('scissors')
-    let choice = ''
+    let choice = document.createAttribute('img')
 
-    if (move1 = checked) {
-        document.getElementById('move1').innerHTML = "<img src='imagens/black-rock.png>"
+    if (move1 == checked) {
+        choice.createAttribute()
     }
 
 }
