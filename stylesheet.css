@@ -92,9 +92,16 @@ div#rules img {
     background-color: black;
     margin: auto;
     margin-top: 50%;
+    height: 530px;
     color: white;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.600);
+}
+
+#player-score, #cpu-score {
+    background-color: var(--gray);
+    border: solid 2px black;
+    border-radius: 5px;
 }
 
 #score {
@@ -119,21 +126,24 @@ div#rules img {
 }
 
 #movement {
-    display: flex;
-    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px
 }
 
 #movement input {
-    visibility: hidden;
+    background-color: gray;
+    margin-left: 8%;
 }
 
-label {
-    display: block;
-    margin: auto;
-    background-color:rgba(0, 0, 0, 0.322) ;
-    width: 120px;
-    height: 150px;
-}
+
+
+
+
+ 
+
+
+
+
 
 
 
