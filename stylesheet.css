@@ -116,12 +116,15 @@ div#rules img {
     display: flex;
     background-color: white;
     max-width: 400px;
- }
+}
 
 #playermove , #cpumove {
     background-color: rgba(0, 0, 0, 0.322);
     width: 200px;
-    height: 200px;
+    height: 180px;
+    padding-top: 20px;
+    text-align: center;
+    
 }
 
 #movement {
