@@ -19,12 +19,10 @@ function play(){
     gameplay.classList.remove('none')
 }
 
-function movement(checked) {
-    let move = document.getElementById('playermove')
-        
+function image() {
+    var you = document.querySelector('input[name="choices"]:checked').value        
+    playermove.innerHTML = "<img src='imagens/" + you + ".png'>"
+    cpumove.innerHTML = ''
 
-        if (document.getElementById('rock') .checked == true) {
-        
-    }
 
 }
