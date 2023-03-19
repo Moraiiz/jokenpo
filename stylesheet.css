@@ -5,10 +5,6 @@
 
 :root {
     --gray: #383E42;
-    --blue: #0B5A93;
-    --darkgreen: #0E1708;
-    --salmon: #D9886A;
-    --green: #8CCFAE;
 }
 
 * {
@@ -58,6 +54,7 @@ input.button {
     font-family: 'pixeled', Arial, Helvetica, sans-serif ;
     height: 50px;
     width: 150px;
+    border: solid 3px black;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.600);
     border-radius: 25px;
 }
@@ -127,15 +124,17 @@ div#rules img {
     
 }
 
-#movement {
-    margin-top: 30px;
-    margin-bottom: 30px
+#movement input {
+    display: none;
 }
 
-#movement input {
-    background-color: gray;
-    margin-left: 8%;
+label img {
+    display: inline-block;
+    margin: 25px 33px 5px 33px;
 }
+
+
+
 
 
 

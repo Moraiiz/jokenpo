@@ -12,14 +12,14 @@
     <div id="menu">
         <div id="logo">
             <p>JOKENPO</p>
-            <img src="imagens/logojoken.png" alt="Game logo">
+            <img src="images/logojoken.png" alt="Game logo">
         </div>
         <input type="button" value="PLAY" class="button" onclick="play()">
         <input type="button" value="RULES" class="button" onclick="rule()">
     </div>
     <!--RULES-->
     <div id="rules" class="none">
-        <img src="imagens/rules.png" alt="Image that explains the rules of the game">
+        <img src="images/rules.png" alt="Image that explains the rules of the game">
         <input type="button" value="BACK" class="button" onclick="back()">
     </div>
     <!--GAMEPLAY-->
@@ -40,12 +40,12 @@
             </div>
             <p>CHOOSE YOUR MOVE</p>
             <form id="movement">
-                <input type="radio" onclick="image()" name="choices" value="black-rock">
-                <label for="rock"><img src="imagens/rock.png" alt="rock"></label>
-                <input type="radio" onclick="image()" name="choices" value="black-paper">
-                <label for="paper"><img src="imagens/paper.png" alt="paper"></label>
-                <input type="radio" onclick="image()" name="choices" value="black-scissors">
-                <label for="scissors"><img src="imagens/scissors.png" alt="scissors"></label>
+                <input type="radio" onclick="image()" name="choices" value="black-rock" id="rock">
+                <label for="rock"><img src="images/rock.png" alt="rock"></label>
+                <input type="radio" onclick="image()" name="choices" value="black-paper" id="paper">
+                <label for="paper"><img src="images/paper.png" alt="paper"></label>
+                <input type="radio" onclick="image()" name="choices" value="black-scissors" id="scissors">
+                <label for="scissors"><img src="images/scissors.png" alt="scissors"></label>
             </form> 
                 <input type="button" value="JOKENPO!" class="button">
                 

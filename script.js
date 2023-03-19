@@ -21,8 +21,6 @@ function play(){
 
 function image() {
     var you = document.querySelector('input[name="choices"]:checked').value        
-    playermove.innerHTML = "<img src='imagens/" + you + ".png'>"
+    playermove.innerHTML = "<img src='images/" + you + ".png'>"
     cpumove.innerHTML = ''
-
-
 }
