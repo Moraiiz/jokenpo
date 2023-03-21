@@ -48,6 +48,7 @@ div#logo img {
 
 input.button {
     display: flex;
+    cursor: pointer;
     justify-content: center;
     margin: auto;
     margin-top: 15px;
@@ -128,10 +129,12 @@ div#rules img {
     display: none;
 }
 
-label img {
+label {
     display: inline-block;
-    margin: 25px 33px 5px 33px;
+    margin: 34px 34px 20px 34px;
+    cursor: pointer;
 }
+
 
 
 
