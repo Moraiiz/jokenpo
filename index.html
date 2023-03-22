@@ -26,8 +26,8 @@
     <div id="gameplay" class="none">
         <div id="score">
             <div>YOU</div>
-            <div id="player-score">0</div>
-            <div id="cpu-score">0</div>
+            <div id="pscore">0</div>
+            <div id="cscore">0</div>
             <div>CPU</div>
         </div>
             <div id="match">
@@ -40,14 +40,14 @@
             </div>
             <p>CHOOSE YOUR MOVE</p>
             <form id="movement">
-                <input type="radio" onclick="image()" name="choices" value="black-rock" id="rock">
-                <label for="rock"><img src="images/rock.png" alt="rock"></label>
-                <input type="radio" onclick="image()" name="choices" value="black-paper" id="paper">
-                <label for="paper"><img src="images/paper.png" alt="paper"></label>
-                <input type="radio" onclick="image()" name="choices" value="black-scissors" id="scissors">
-                <label for="scissors"><img src="images/scissors.png" alt="scissors"></label>
+                <input type="radio" onclick="image()" name="choices" value="rock" id="rock">
+                <label for="rock"><img src="images/white-rock.png" alt="rock"></label>
+                <input type="radio" onclick="image()" name="choices" value="paper" id="paper">
+                <label for="paper"><img src="images/white-paper.png" alt="paper"></label>
+                <input type="radio" onclick="image()" name="choices" value="scissors" id="scissors">
+                <label for="scissors"><img src="images/white-scissors.png" alt="scissors"></label>
             </form> 
-                <input type="button" value="JOKENPO!" class="button">
+                <input type="button" value="JOKENPO!" class="button" onclick="jokenpo()">
                 
             
         

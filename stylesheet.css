@@ -95,7 +95,7 @@ div#rules img {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.600);
 }
 
-#player-score, #cpu-score {
+#pscore, #cscore {
     background-color: var(--gray);
     border: solid 2px black;
     border-radius: 5px;
