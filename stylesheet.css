@@ -131,8 +131,22 @@ div#rules img {
 
 label {
     display: inline-block;
-    margin: 34px 34px 20px 34px;
+    text-align: center;
+    margin: 30px 14px 20px 14px;
     cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+label img {
+    text-align: center;
+}
+
+label:hover {
+    background-color: var(--gray);
+    border-radius: 15px;
+    transition-duration: .2s;
+    
 }
 
 
