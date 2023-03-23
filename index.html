@@ -47,7 +47,7 @@
                 <input type="radio" onclick="image()" name="choices" value="scissors" id="scissors">
                 <label for="scissors"><img src="images/white-scissors.png" alt="scissors"></label>
             </form> 
-                <input type="button" value="JOKENPO!" class="button" onclick="jokenpo()">
+                <input type="button" value="JOKENPO!" class="button" id="jokenpo" onclick="jokenpo()">
                 
             
         
@@ -55,14 +55,14 @@
     <!--WINNER-->
     <div id="winner" class="none">
         <p>YOU WIN!</p>
-        <input type="button" value="PLAY AGAIN" class="button">
-        <input type="button" value="MAIN MENU" class="button">
+        <input type="button" onclick="playagain()" value="PLAY AGAIN" class="button">
+        <input type="button" onclick="mainmenu()" value="MAIN MENU" class="button">
     </div>
     <!--LOSER-->
     <div id="loser" class="none" >
         <p>YOU LOSE...</p>
-        <input type="button" value="PLAY AGAIN" class="button">
-        <input type="button" value="MAIN MENU" class="button">
+        <input type="button" onclick="playagain()" value="PLAY AGAIN" class="button">
+        <input type="button" onclick="mainmenu()" value="MAIN MENU" class="button">
     </div>
 
     <footer>

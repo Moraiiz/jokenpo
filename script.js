@@ -1,11 +1,16 @@
-const menu = document.getElementById('menu')
-const rules = document.getElementById('rules')
-const winner = document.getElementById('winner')
-const loser = document.getElementById9('loser')
-const game = document.getElementById('gameplay')
+var playerscore = 0
+var cpuscore = 0
 
 var you = ''
 var cpu = ''
+
+const menu = document.getElementById('menu')
+const rules = document.getElementById('rules')
+const winner = document.getElementById('winner')
+const loser = document.getElementById('loser')
+const game = document.getElementById('gameplay')
+
+
 
 function rule() {
     menu.classList.add('none')
@@ -37,12 +42,10 @@ function jokenpo(){
 
 function analysis() {
     
-    var playerscore = document.getElementById('pscore')
-    var cpuscore = document.getElementById('cscore')
-    playerscore = '0'
-    cpuscore = '0'
-    let win = '0'
-    
+    let win = 0
+
+    document.getElementById('jokenpo').disabled = true
+   
     if(you == cpu) {
 
     } else if(you == 'rock') {
@@ -52,16 +55,62 @@ function analysis() {
     } else if(you == 'scissors') {
         win = cpu == 'paper' ? 2 : 1
     }
-
+    
     if(win == 0) {
 
     } else if(win == 2) {
-        playerscore = ++1
+        playerscore ++
     } else {
-        cpuscore = ++1 
+        cpuscore ++
     }
 
     pscore.innerHTML =  playerscore
     cscore.innerHTML = cpuscore
+
     
+
+    if(playerscore >= 3) {
+        clear()
+        winner.classList.remove('none')
+        gameplay.classList.add('none')
+    }
+
+    if (cpuscore >= 3) {
+        clear()
+        loser.classList.remove('none')
+        gameplay.classList.add('none')
+    }
+
+    setTimeout(()=>{
+        document.getElementById('jokenpo').disabled = false
+        imgreset()
+    },1000)
 }
+
+function imgreset(){
+    playermove.innerHTML = ''
+    cpumove.innerHTML = ''
+}
+
+function clear(){
+    playerscore = 0
+    cpuscore = 0
+    pscore.innerHTML = '0'
+    cscore.innerHTML = '0'
+    playermove.innerHTML = ''
+    cpumove.innerHTML = ''
+}
+
+function playagain() {
+    winner.classList.add('none')
+    loser.classList.add('none')
+    gameplay.classList.remove('none')
+}
+
+function mainmenu() {
+    winner.classList.add('none')
+    loser.classList.add('none')
+    menu.classList.remove('none')
+}
+
+
