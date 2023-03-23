@@ -27,7 +27,7 @@ body p {
 }
 
 div#menu {
-    margin-top: 50%;
+    margin-top: 25%;
 }
 
 div#logo {
@@ -68,7 +68,7 @@ input.button:hover {
 
 div#rules {
     margin: auto;
-    margin-top: 50%;
+    margin-top: 20%;
     background-color: white;
     width: 295px;
     height: 295px;
@@ -82,13 +82,13 @@ div#rules img {
 }
 
 #winner, #loser {
-    margin-top: 50%;
+    margin-top: 25%;
 }
 
 #gameplay {
     background-color: black;
     margin: auto;
-    margin-top: 50%;
+    margin-top: 10%;
     height: 530px;
     color: white;
     border-radius: 10px;
