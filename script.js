@@ -25,11 +25,13 @@ function back() {
 function play(){
     menu.classList.add('none')
     gameplay.classList.remove('none')
+    document.getElementById('jokenpo').disabled = true
 }
 
 function image() {
     you = document.querySelector('input[name="choices"]:checked').value        
     playermove.innerHTML = "<img src='images/" + you + ".png'>"
+    document.getElementById('jokenpo').disabled = false
 }
 
 function jokenpo(){
@@ -45,7 +47,7 @@ function analysis() {
     let win = 0
 
     document.getElementById('jokenpo').disabled = true
-   
+
     if(you == cpu) {
 
     } else if(you == 'rock') {
@@ -67,22 +69,21 @@ function analysis() {
     pscore.innerHTML =  playerscore
     cscore.innerHTML = cpuscore
 
-    
-
     if(playerscore >= 3) {
-        clear()
+        setTimeout(()=>{
         winner.classList.remove('none')
         gameplay.classList.add('none')
+        },1000)
     }
 
     if (cpuscore >= 3) {
-        clear()
+        setTimeout(()=>{
         loser.classList.remove('none')
         gameplay.classList.add('none')
+        },1000)
     }
 
     setTimeout(()=>{
-        document.getElementById('jokenpo').disabled = false
         imgreset()
     },1000)
 }
@@ -102,12 +103,14 @@ function clear(){
 }
 
 function playagain() {
+    clear()
     winner.classList.add('none')
     loser.classList.add('none')
     gameplay.classList.remove('none')
 }
 
 function mainmenu() {
+    clear()
     winner.classList.add('none')
     loser.classList.add('none')
     menu.classList.remove('none')
